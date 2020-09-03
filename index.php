@@ -19,7 +19,7 @@ get_header(); ?>
     <div class="post-item">
       <h2 class="headline headline--medium headline--post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       <div class="metabox">
-        <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time('j F Y'); ?> in <?php echo get_the_category_list(', '); ?></p>
+        <p>Posted by <?php the_author_posts_link(); ?> on <?php the_time('j M Y'); ?> in <?php echo get_the_category_list(', '); ?></p>
       </div>
 
       <div class="generic-content">
@@ -29,6 +29,7 @@ get_header(); ?>
 
     </div>
   <?php }
+  echo paginate_links();
 ?>
 </div>
 
